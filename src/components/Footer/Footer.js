@@ -1,11 +1,15 @@
 import React, { PureComponent } from "react";
+import styled from 'styled-components';
+
+const StyledFooter = styled.div`
+  color: green;
+  font-weight: bold;
+`;
 
 export default class Footer extends PureComponent {
   render() {
     return (
-      <footer className="App-header">
-        <h1 className="App-title">---</h1>
-      </footer>
+      <StyledFooter><p>This is the footer.</p></StyledFooter>
     )
   }
 }

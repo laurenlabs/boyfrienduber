@@ -1,15 +1,18 @@
 import React, { PureComponent } from "react";
-import Header from '../Header';
-import Footer from '../Footer';
+import styled from 'styled-components';
+
+const StyledPage = styled.div`
+  color: purple;
+  font-weight: bold;
+  background-color: yellow;
+`;
 
 export default class Page extends PureComponent {
   render() {
     return (
-      <div>
-        <Header />
-        <div className="page-wrap">{this.props.children}</div>
-        <Footer />
-      </div>
+      <StyledPage>
+        <div>{this.props.children}</div>
+      </StyledPage>
     )
   }
 }

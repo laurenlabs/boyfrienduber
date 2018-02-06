@@ -1,12 +1,13 @@
 import React, { PureComponent } from "react";
+import Page from '../../components/Page';
 
 
 export default class Review extends PureComponent {
   render() {
     return (
-      <div className="App">
+      <Page>
         <p>Review</p>
-      </div>
+      </Page>  
     );
   }
 }

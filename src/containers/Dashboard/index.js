@@ -1,12 +1,12 @@
 import React, { PureComponent } from "react";
-
+import Page from '../../components/Page';
 
 export default class Dashboard extends PureComponent {
   render() {
     return (
-      <div className="App">
+      <Page>
         <p>Dashboard</p>
-      </div>
+      </Page>       
     );
   }
 }

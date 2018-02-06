@@ -1,5 +1,16 @@
+@font-face {
+  font-family: 'bignoodle';
+  src: url('./assets/fonts/bignoodletoo.ttf');
+}
+
+@font-face {
+  font-family: 'koverwatch';
+  src: url('./assets/fonts/koverwatch.ttf');
+}
+
 .App {
   text-align: center;
+  font-family: 'Futura';
 }
 
 .App-logo {

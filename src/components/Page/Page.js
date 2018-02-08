@@ -1,17 +1,22 @@
 import React, { PureComponent } from "react";
 import styled from 'styled-components';
+import bg from '../../overwatch_bg.png';
 
 const StyledPage = styled.div`
   color: purple;
-  font-weight: bold;
-  background-color: yellow;
+  background: url(${bg});
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
 `;
 
 export default class Page extends PureComponent {
   render() {
     return (
       <StyledPage>
-        <div>{this.props.children}</div>
+      {this.props.children}
       </StyledPage>
     )
   }

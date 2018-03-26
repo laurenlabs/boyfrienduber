@@ -16,7 +16,7 @@ export default class Page extends PureComponent {
   render() {
     return (
       <StyledPage>
-      {this.props.children}
+        {this.props.children}
       </StyledPage>
     )
   }

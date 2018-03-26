@@ -1,5 +1,6 @@
 import React, { PureComponent } from "react";
 import styled from 'styled-components';
+import { Layout } from 'antd';
 
 const StyledFooter = styled.div`
   background-color: rgba(29, 30, 36, .63);
@@ -12,7 +13,7 @@ const StyledFooter = styled.div`
   }
 `;
 
-export default class Footer extends PureComponent {
+export default class BFooter extends PureComponent {
   render() {
     return (
       <StyledFooter><p>&copy; 2018 Lauren Labs</p></StyledFooter>

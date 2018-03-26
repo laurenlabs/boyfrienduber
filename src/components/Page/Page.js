@@ -1,5 +1,7 @@
 import React, { PureComponent } from "react";
 import styled from 'styled-components';
+import Button from 'antd/lib/button';
+import 'antd/lib/button/style/css';
 import bg from '../../overwatch_bg.png';
 
 const StyledPage = styled.div`
@@ -16,6 +18,7 @@ export default class Page extends PureComponent {
   render() {
     return (
       <StyledPage>
+        <Button type="primary">Primary</Button>
         {this.props.children}
       </StyledPage>
     )

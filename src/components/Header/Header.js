@@ -1,6 +1,6 @@
 import React, { PureComponent } from "react";
 import styled from 'styled-components';
-
+import Navigation from './Navigation';
 // import logo from '../../logo.svg';
 
 const StyledHeader = styled.div`
@@ -20,9 +20,8 @@ export default class Header extends PureComponent {
   render() {
     return (
       <StyledHeader>
-        <header>
           <h1>BoyfriendUber</h1>
-        </header>
+        <Navigation />
       </StyledHeader>
     )
   }
